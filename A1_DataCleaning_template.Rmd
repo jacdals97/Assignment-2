@@ -1,7 +1,7 @@
 ---
 title: "Assignment 1 - Data Cleaning - Instructions"
-author: "[FILL IN YOUR NAME]"
-date: "[FILL IN THE DATE]"
+author: "Studygroup 12"
+date: "09-10-2019"
 output: 
   md_document:
     variant: markdown_github
@@ -260,8 +260,8 @@ USING ARRANGE
 2. Sort kids to find the kid who produced the least amount of words on the 1st visit.
 
 ```{r}
-arrange(merged_data2, desc(VISIT), desc(tokens_CHI)) #Kid number 59 produced most words at second visti
-arrange(merged_data2, VISIT, tokens_CHI) #Kid number 61 produced no words at first visit 
+head(arrange(merged_data2, desc(VISIT), desc(tokens_CHI))) #Kid number 59 produced most words at second visti
+head(arrange(merged_data2, VISIT, tokens_CHI)) #Kid number 61 produced no words at first visit 
 
 
 ```
